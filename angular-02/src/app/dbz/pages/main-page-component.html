@@ -1,0 +1,9 @@
+<h1 class="text-center text-orange-800 text-3xl font-semibold decoration-slate-50 underline underline-offset-8">Personaje de dragon ball</h1>
+<div class="container mx-auto grid grid-cols-2">
+  <div class="text-center">
+    <list-dbz (onDeletedId)="onDeleteCharacter($event)" [characterList]="characters"></list-dbz>
+  </div>
+  <div>
+    <form-dbz (onNewCharacter)="onNewCharacter($event)"></form-dbz>
+  </div>
+</div>

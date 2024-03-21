@@ -1,0 +1,18 @@
+<h1 class="text-3xl font-bold underline">{{name}}</h1>
+<dl>
+  <td>Nombre:</td>
+  <dd class="mb-2 font-bold text-lg">{{name}}</dd>
+
+  <td>Edad:</td>
+  <dd class="mb-2 font-bold text-lg">{{age}}</dd>
+
+  <td>Metodo:</td>
+  <dd class="mb-2 font-bold text-lg">{{sumNameAge}}</dd>
+
+  <td>Capitalizado:</td>
+  <dd class="mb-2 font-bold text-lg">{{capitalized}}</dd>
+</dl>
+
+<button *ngIf="name === 'sergi' ? false :true" class="rounded-lg px-4 py-2 bg-gray-900 text-gray-100 ml-2" (click)="changeName()">cambiar nombre</button>
+<button *ngIf="age === 37 ? false :true" class="rounded-lg px-4 py-2 bg-gray-900 text-gray-100 ml-2" (click)="changeEdad()">cambiar edad</button>
+<button class="rounded-lg px-4 py-2 bg-gray-900 text-gray-100 ml-2" (click)="reset()">Resetar</button>
